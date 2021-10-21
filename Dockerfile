@@ -23,8 +23,8 @@ RUN apt-get install --yes \
  zlib1g-dev \
  vim-common \
  wget \
- python \
- python-pip \
+ python3 \
+ python3-pip \
  git \
  pigz \
  r-base \

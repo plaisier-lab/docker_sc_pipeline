@@ -47,6 +47,7 @@ WORKDIR /
 RUN R -e "install.packages(c('getopt','dplyr','Seurat','SeuratDisk','patchwork','ggplot2','grid','gridExtra','writexl','data.table','readr','verification','MCMCpack','tidyr','beanplot','mixtools','pheatmap','zoo','squash'), repos = 'http://cran.us.r-project.org')"
 
 # Install Bioconductor pacakges
-RUN R -e "source('https://bioconductor.org/biocLite.R')"
+RUN R -e "install.packages('BiocManager')"
+RUN R -e "BiocManager::install(version = '3.13')"
 RUN R -e "BiocManager::install(c('biomaRt'))"
 

@@ -6,9 +6,9 @@ RUN apt-get update
 
 RUN apt-get install --yes software-properties-common
 
-RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 
-RUN sudo add-apt-repository "deb [trusted=yes] https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
+RUN add-apt-repository "deb [trusted=yes] https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
 
 RUN apt-get update
 
